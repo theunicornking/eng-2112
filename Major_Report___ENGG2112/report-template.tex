@@ -113,16 +113,16 @@
 	
 	\section{Methodology}\label{sec:meth}
 	\subsection{Data Pre-Processing}
+	
+	As some of the variables
+
+	
 	As some of the independent variables are categorical in nature, we first need to use one-hot encoding to convert them to (binary) numerical variables. There are also a number of missing data values, which we replace with zero where appropriate\footnote{These are those variables which are blank because their true values are zero.} and with the average value of that variable calculated using the non-empty values otherwise. These were implemented using the \textsf{sklearn} module's functions, as follows:
 	\begin{enumerate}
 		\item \textsf{onehotencode()} for one-hot encoding; 
 		\item \textsf{dataclean()} for zeroing missing data;
 		\item \textsf{average()} for averaging.
 	\end{enumerate}
-
-As some of the variables
-
-
 
 	
 	\subsection{Feature Extraction}
